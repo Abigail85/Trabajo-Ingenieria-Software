@@ -1,4 +1,4 @@
-package com.co.lineadevida.apirest.configuration;
+package com.co.TakeCarePets.apirest.configuration;
 
 //url localhost:8082/swagger-ui.html#/Persona
 //localhost:8082/v2/api-docs
@@ -31,7 +31,7 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfo(
-                "Api de Prueba Proyecto Ciclo3",
+                "Api de Prueba Proyecto Poli Ingenieria de software 1",
                 "Ejemplos de Uso Metodos Http",
                 "API V 0.0.1",
                 "Politicas de uso",

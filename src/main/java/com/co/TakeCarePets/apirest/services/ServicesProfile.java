@@ -1,14 +1,15 @@
-package com.co.lineadevida.apirest.services;
+package com.co.TakeCarePets.apirest.services;
 
-import com.co.lineadevida.apirest.models.EntityEmployee;
-import com.co.lineadevida.apirest.models.EntityProfile;
-import com.co.lineadevida.apirest.repository.RepositoryProfile;
-import com.co.lineadevida.apirest.util.Enum_RoleName;
+
+import com.co.TakeCarePets.apirest.models.EntityMascota;
+import com.co.TakeCarePets.apirest.models.EntityProfile;
+import com.co.TakeCarePets.apirest.repository.RepositoryProfile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
+
 
 
 @Service
@@ -28,11 +29,11 @@ private String mensaje;
         return searchProfile;
     }
 
-    public EntityProfile insertProfile(EntityEmployee employee) {
+    public EntityProfile insertProfile(EntityMascota mascota) {
          EntityProfile profile = new EntityProfile();
           profile.setCreatedAtProfile(LocalDate.now());
-          profile.setIdProfile(employee.getIdEmployee());
-          profile.setIdEmployee(employee);
+          profile.setIdProfile(mascota.getIdMascota());
+          profile.setIdMascota(mascota);
           repositoryProfile.save(profile);
          return profile;
     }
@@ -60,12 +61,12 @@ private String mensaje;
         return updateProfile;
 
     }
-    public void deleteProfile(EntityEmployee idEmployee) {
+    public void deleteProfile(EntityMascota idEmployee) {
 
          EntityProfile entityProfile = new EntityProfile();
-         entityProfile.setIdProfile(idEmployee.getIdEmployee());
+         entityProfile.setIdProfile(idEmployee.getIdMascota());
           repositoryProfile.deleteById(entityProfile.getIdProfile());
-          //return "Perfril eliminado exitosamente";
+          //return "Perfil eliminado exitosamente";
     }
 
 

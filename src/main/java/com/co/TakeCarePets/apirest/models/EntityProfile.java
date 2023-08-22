@@ -1,4 +1,4 @@
-package com.co.lineadevida.apirest.models;
+package com.co.TakeCarePets.apirest.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
@@ -34,9 +34,9 @@ public class EntityProfile {
     private LocalDate updateAtProfile ;
 
     private String mensaje;
-    @JoinColumn (name = "idEmployee", referencedColumnName = "idEmployee")
+    @JoinColumn (name = "idMascota", referencedColumnName = "idMascota")
     @OneToOne    (optional = false)
-    private EntityEmployee idEmployee ;
+    private EntityMascota idMascota ;
 
 
 }

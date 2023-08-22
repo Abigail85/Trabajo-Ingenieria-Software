@@ -5,7 +5,7 @@
 <head><!--en esta etiqueta recibe la información acerca de la pagina-->
 
     <!--meta;me dice ciertas caracteristicas que tiene mi página-->
-   <!-- charset utf8:sirve para que el navegador coloque caracteres de nuestro idioama español-->
+   <!-- charset utf8:sirve para que el navegador coloque caracteres de nuestro idioma español-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -80,12 +80,12 @@ un texto que va a definir que es lo que hay en sta página-->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
-                    <span>Reportes</span>
+                    <span>Salud</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Reportes:</h6>
-                        <a class="collapse-item"  onclick="location.href='vista/enterprise.html'">Gestionar Reportes</a>
+                        <h6 class="collapse-header">Salud:</h6>
+                        <a class="collapse-item"  onclick="location.href='vista/Salud.html'">Gestionar Condiciones de salud</a>
 
                     </div>
                 </div>
@@ -98,12 +98,12 @@ un texto que va a definir que es lo que hay en sta página-->
                 <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Mascota:</h6>
-                        <a class="collapse-item"  onclick="location.href='vista/employee.html'">Gestionar Mascota</a>
+                        <a class="collapse-item"  onclick="location.href='vista/mascota.html'">Gestionar Mascota</a>
 
                     </div>
                 </div>
             </li>
-            <!-- Nav Item - Utilities Collapse Menu -->
+            <!-- Nav Item - Utilities Collapse Menu
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
@@ -112,11 +112,11 @@ un texto que va a definir que es lo que hay en sta página-->
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Salud:</h6>
-                        <a class="collapse-item"  onclick="location.href='vista/transaction.html'">Gestionar salud</a>
+                        <a class="collapse-item"  onclick="location.href='vista/transaction.html'">Gestionar Reportes</a>
 
                     </div>
                 </div>
-            </li>
+            </li> -->
 
 
         </ul>
@@ -203,18 +203,48 @@ un texto que va a definir que es lo que hay en sta página-->
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
+
                 <div class="container-fluid">
 
-                    <!-- Page Heading
+                    <!-- Page Heading-->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Inicio</h1>
+                        <h1 class="h3 mb-0 text-gray-700" align="rigth">Mascotas registradas</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div>-->
+                    </div>
 
-                    <img src="/static/img/inicio.jpg" alt="" height="700px">
+                    <div class="d-sm-flex align- justify-content-between mb-2">
+                        <p>
+                            <img src="/static/img/Anotación%202023-08-03%20215229%20(1).png"  alt="" height="300px">
+                        <div class="">
+                            <h1 class="h3 mb-0 text-gray-900" >Pelusa</h1>
+                            <h1 class="h3 mb-0 text-gray-900" >Recomendaciones de cuidado</h1>
+                            <p>Frecuencia de alimentacion: 3 veces al dia</p>
+                            <p>Frecuencia del baño: 2 veces al mes</p>
+                            <p>Frecuencia del cepillado: 2 veces al dia (mañano/noche)</p>
+                            <p>Frecuencia de actividad fisica: Sacarla tres veces al dia es muy activa</p>
+                        </div>
+                        </p>
 
-                </div>
+
+
+
+                    </div>
+                    <div class="d-sm-flex align- justify-content-between mb-2">
+                        <p>
+                            <img src="/static/img/web_yorkshire_ter_big_tp_VL406123_MG22602199%20(1).jpg" align="right" alt="" height="300px">
+                        <div class="">
+                            <h1 class="h3 mb-0 text-gray-900"  >Chanel</h1>
+                            <h1 class="h3 mb-0 text-gray-900"  >Recomendaciones de cuidado</h1>
+                            <p>Frecuencia de alimentacion: 3 veces al dia</p>
+                            <p>Frecuencia del baño: 4 veces al mes</p>
+                            <p>Frecuencia del cepillado: 2 veces al dia (mañana/noche)</p>
+                            <p>Frecuencia de actividad fisica: Es muy nerviosa y no sedebe sacar al aire libre solo darle mucho amor</p>
+                        </div>
+                        </p>
+
+                    </div>
+
                 <!-- /.container-fluid -->
 
             </div>
@@ -224,7 +254,7 @@ un texto que va a definir que es lo que hay en sta página-->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Proyecto Politecnico gran colombiano</span>
+                        <span>Copyright &copy; Proyecto Poli Ingenieria de software 1</span>
                     </div>
                 </div>
             </footer>

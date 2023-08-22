@@ -1,8 +1,8 @@
-package com.co.lineadevida.apirest.controller;
+package com.co.TakeCarePets.apirest.controller;
 
-import com.co.lineadevida.apirest.models.EntityEmployee;
-import com.co.lineadevida.apirest.models.EntityProfile;
-import com.co.lineadevida.apirest.services.ServicesProfile;
+
+import com.co.TakeCarePets.apirest.services.ServicesProfile;
+import com.co.TakeCarePets.apirest.models.EntityProfile;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
